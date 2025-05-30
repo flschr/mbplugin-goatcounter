@@ -1,3 +1,4 @@
+{{ if .Site.Params.goatcounter_url }}
 <script>
   window.goatTracked = true;
   const ref = document.referrer;
@@ -13,3 +14,6 @@
 <noscript>
   <img src="{{ .Site.Params.goatcounter_url }}/count?p={{ .RelPermalink }}&t={{ .Title | urlquery }}" alt="" style="display:none">
 </noscript>
+{{ else }}
+<!-- GoatCounter plugin installed, but no domain configured -->
+{{ end }}
