@@ -5,14 +5,15 @@
   "templates": {
     "footer": "partials/goatcounter.html"
   },
-"settings": {
-  "goatcounter_url": {
-    "type": "text",
-    "title": "Your GoatCounter Domain (without /count)"
-  },
-  "use_javascript": {
-    "type": "boolean",
-    "title": "Enable local JS (allows tracking of referrer)",
-    "default": true
+  "settings": {
+    "goatcounter_url": {
+      "type": "text",
+      "title": "Your GoatCounter Domain (without /count)"
+    },
+    "use_javascript": {
+      "type": "boolean",
+      "title": "Enable local JS (allows tracking of referrer)",
+      "default": true
+    }
   }
 }
