@@ -8,7 +8,6 @@ This plugin adds privacy-friendly, lightweight analytics to your Micro.blog site
 
 - Static tracking pixel (`<img>`) with page path and title
 - Optional inline JavaScript to include the HTTP referrer
-- Works with [GoatCounter vanity URLs](https://www.goatcounter.com/help/faq#custom-domain)
 - Fully GDPR-friendly: No cookies, no third-party tracking, no fingerprinting
 
 ## 🛠 How It Works
@@ -18,7 +17,7 @@ This plugin adds privacy-friendly, lightweight analytics to your Micro.blog site
 
 ## ⚙️ Setup
 1. Register and setup your free [GoatCounter](https://www.goatcounter.com).
-2. Optional: Create a free [GoatCounter vanity URL](https://www.goatcounter.com/help/faq#custom-domain)
+2. Create a free [GoatCounter vanity URL](https://www.goatcounter.com/help/faq#custom-domain)
 3. Go to the Micro.blog plugin directory and install the plugin from there.
 4. Include the tracking partial `{{ partial "goatcounter.html" . }}` in the footer.html of your theme, or wherever appropriate.
 5. Go to the plugin settings and enter your tracking domain, e.g. `https://name.goatcounter.com` or `https://stats.example.com`. Ensure you enter the full URL including `https://` and without `/count`.
