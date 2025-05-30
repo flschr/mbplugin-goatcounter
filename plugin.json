@@ -1,0 +1,15 @@
+{
+  "name": "GoatCounter privacy optimized integration",
+  "version": "1.0",
+  "author": "René Fischer",
+  "description": "GoatCounter web analytics with a tracking pixel + local JS for refeer tracking",
+  "templates": {
+    "footer": "partials/goatcounter.html"
+  },
+  "settings": {
+    "goatcounter_url": {
+      "type": "text",
+      "title": "Your GoatCounter (Vanity) Domain (without /count)"
+    }
+  }
+}
