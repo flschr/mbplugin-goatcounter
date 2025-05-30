@@ -19,7 +19,7 @@ This plugin adds privacy-friendly, lightweight analytics to your Micro.blog site
 ## ⚙️ Configuration
 Specify your **GoatCounter tracking domain** in the configuration, (e.g. `https://name.goatcounter.com/`).
 
-> 🦊 **Vanity URLs** (e.g. `https://name.goatcounter.com/`) are fully supported — just enter your full base URL **without** `/count` in the plugin settings.
+> 🦊 **Vanity URLs** (e.g. `https://stats.yourdomain.com/`) are fully supported — just enter your full base URL **without** `/count` in the plugin settings.
 
 ## 📦 Installation
 Go to the Micro.blog plugin directory and install the plugin from there.
