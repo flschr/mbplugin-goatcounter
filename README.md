@@ -24,7 +24,7 @@ This plugin adds privacy-friendly, lightweight analytics to your Micro.blog site
 5. Go to the plugin settings and enter your tracking domain, e.g. `https://name.goatcounter.com` or `https://stats.example.com`. Ensure you enter the full URL including `https://` and without `/count`.
 6. Optional: Enable inline JavaScript for sending the referrer to GoatCounter
 
-### ⚠️ Limitations
+## ⚠️ Limitations
 This plugin uses a privacy-focused implementation of GoatCounter with **no external JavaScript** from GoatCounter itself. This design respects user privacy but comes with a few important limitations:
 
 - **No JavaScript = limited data**  
