@@ -12,21 +12,42 @@ This plugin adds privacy-friendly, lightweight analytics to your Micro.blog site
 - Fully GDPR-friendly: No cookies, no third-party tracking, no fingerprinting
 
 ## 🛠 How It Works
-
 1. A tracking request is sent to your GoatCounter domain with the current page path and title.
 2. If JavaScript tracking is enabled and the visitor came from an external site, the referrer is added.
 3. If JavaScript is disabled or blocked, a `<noscript>` fallback ensures basic page view tracking still works.
 
-## ⚙️ Plugin Settings
+## ⚙️ Setup
+1. Register and setup your free [GoatCounter](https://www.goatcounter.com).
+2. Optional: Create a free [GoatCounter vanity URL](https://www.goatcounter.com/help/faq#custom-domain)
+3. Go to the Micro.blog plugin directory and install the plugin from there.
+4. Include the tracking partial `{{ partial "goatcounter.html" . }}` in the footer.html of your theme, or wherever appropriate.
+5. Go to the plugin settings and enter your tracking domain, e.g. `https://name.goatcounter.com` or `https://stats.example.com`. Ensure you enter the full URL including `https://` and without `/count`.
+6. Optional: Enable inline JavaScript for sending the referrer to GoatCounter
 
-This plugin provides two configuration options in Micro.blog:
-- GoatCounter Domain: Your tracking domain, e.g. `https://name.goatcounter.com/` or `https://stats.example.com` (without `/count`)
-- Enable inline JavaScript: Enable or disable inline JavaScript for sending the referrer
+### ⚠️ Limitations
+This plugin uses a privacy-focused implementation of GoatCounter with **no external JavaScript** from GoatCounter itself. This design respects user privacy but comes with a few important limitations:
 
-> 🦊 **Vanity URLs** (e.g. `https://yourdomain.com/count`) are fully supported, just enter the full base URL.
+- **No JavaScript = limited data**  
+  Without the official GoatCounter JS, only basic pageview tracking is available via image requests or inline scripts. This means you can only track:
+  - Page paths
+  - Page titles
+  - Optional referrer (when local JS is enabled)
 
-## 📦 Installation
-Go to the Micro.blog plugin directory and install the plugin from there.
+  You won’t see data about:
+  - Operating systems (e.g., macOS, Windows)
+  - Browsers (e.g., Chrome, Safari)
+  - Device types or screen sizes
+  - Language of your visitor
+  - Country of your visitor
+
+- **Referrer tracking is optional and limited**  
+  If you activate the inline JS, the plugin tries to capture `document.referrer` using local JavaScript.
+  - Referrers from the same hostname are ignored
+  - Only works if the user has JavaScript enabled
+
+- **Requires a vanity domain**  
+  You must use your own GoatCounter domain (e.g. `https://stats.example.com`). Using the default `*.goatcounter.com` URL may not work due to CORS restrictions.
+
 
 ## 👤 Author
 René Fischer – [https://fischr.org](https://fischr.org)
