@@ -1,4 +1,4 @@
-# 📊 GoatCounter Privacy-Optimized for Micro.blog
+# GoatCounter Privacy-Optimized for Micro.blog
 
 This plugin adds privacy-friendly, lightweight analytics to your Micro.blog site using [GoatCounter](https://www.goatcounter.com). It uses a tracking pixel and optionally includes inline JavaScript to enhance the tracking with HTTP referrer data, without relying on cookies or any third-party scripts.
 
