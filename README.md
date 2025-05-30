@@ -1,4 +1,4 @@
-# 📊 GoatCounter Pixel + Referrer Plugin for Micro.blog
+# 📊 GoatCounter Privacy-optimized Web Analytics for Micro.blog
 
 This plugin adds privacy-friendly, lightweight analytics to your Micro.blog site using [GoatCounter](https://www.goatcounter.com). It uses a static tracking pixel with optional JavaScript to include the HTTP referrer — no cookies, no external JavaScript required.
 
