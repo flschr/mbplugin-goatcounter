@@ -1,19 +1,20 @@
 {
+  "name": "GoatCounter privacy optimized integration",
   "version": "1.0.0",
-  "title": "GoatCounter privacy optimized integration",
   "description": "Respectful web analytics for Micro.blog using GoatCounter. Tracking pixel-only or enhanced with optional referrer tracking via inline JavaScript.",
   "templates": {
     "footer": "partials/goatcounter.html"
   },
-  "settings": {
-    "goatcounter_url": {
-      "type": "text",
-      "title": "Your GoatCounter Domain (without /count)"
+  "fields": [
+    {
+      "field": "params.goatcounter_url",
+      "label": "Your GoatCounter Domain (without /count)",
+      "type": "string"
     },
-    "use_javascript": {
-      "type": "boolean",
-      "title": "Enable local JS (allows tracking of referrer)",
-      "default": true
+    {
+      "field": "params.use_javascript",
+      "label": "Enable local JS (adds referrer tracking)",
+      "type": "boolean"
     }
-  }
+  ]
 }
