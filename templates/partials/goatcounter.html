@@ -1,3 +1,4 @@
+{{ if .Site.Params.use_javascript }}
 <script>
   const ref = document.referrer;
   const path = encodeURIComponent(location.pathname);
@@ -12,3 +13,6 @@
 <noscript>
   <img src="{{ .Site.Params.goatcounter_url }}/count?p={{ .RelPermalink }}&t={{ .Title | urlquery }}" alt="" style="display:none">
 </noscript>
+{{ else }}
+<img src="{{ .Site.Params.goatcounter_url }}/count?p={{ .RelPermalink }}&t={{ .Title | urlquery }}" alt="" style="display:none">
+{{ end }}
