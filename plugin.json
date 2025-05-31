@@ -1,6 +1,6 @@
 {
   "name": "Privacy-optimized GoatCounter integration",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Respectful web analytics for Micro.blog using GoatCounter. Tracking pixel-only or enhanced with optional referrer tracking via inline JavaScript.",
   "includes": [
     "goatcounter.html"
