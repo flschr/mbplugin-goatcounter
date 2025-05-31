@@ -26,26 +26,25 @@ This plugin adds privacy-friendly, lightweight analytics to your Micro.blog site
 ## ⚠️ Limitations
 This plugin uses a privacy-focused implementation of GoatCounter with **no external JavaScript** from GoatCounter itself. This design respects user privacy but comes with a few important limitations:
 
-- **No JavaScript = limited data**  
-  Without the official GoatCounter JS, only basic pageview tracking is available via image requests or inline scripts. This means you can only track:
-  - Page paths
-  - Page titles
-  - Optional referrer (when local JS is enabled)
+**No JavaScript = limited data**  
+Without the official GoatCounter JS, only basic pageview tracking is available via image requests or inline scripts. This means you can only track:
+- Page paths
+- Page titles
+- Optional referrer (when local JS is enabled)
 
-  You won’t see data about:
-  - Operating systems (e.g., macOS, Windows)
-  - Browsers (e.g., Chrome, Safari)
-  - Device types or screen sizes
-  - Language of your visitor
-  - Country of your visitor
+You won’t see data about:
+- Operating systems (e.g., macOS, Windows)
+- Browsers (e.g., Chrome, Safari)
+- Device types or screen sizes
+- Used (Browser) languages of your visitors
+- Countries of your visitors
 
-- **Referrer tracking is optional and limited**  
-  If you activate the inline JS, the plugin tries to capture `document.referrer` using local JavaScript.
-  - Referrers from the same hostname are ignored
-  - Only works if the user has JavaScript enabled
+**Referrer tracking is optional and limited**  
+If you activate the inline JS, the plugin tries to capture `document.referrer` using local JavaScript.
+- Referrers from the same hostname are ignored
+- Only works if the user has JavaScript enabled
 
-- **Requires a vanity domain**  
-  You must use your own GoatCounter domain (e.g. `https://stats.example.com`). Using the default `*.goatcounter.com` URL may not work due to CORS restrictions.
+You must use your own GoatCounter domain (e.g. `https://stats.example.com`). Using the default `*.goatcounter.com` URL may not work due to CORS restrictions.
 
 
 ## 👤 Author
