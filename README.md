@@ -16,8 +16,8 @@ This plugin adds privacy-friendly, lightweight analytics to your Micro.blog site
 3. If JavaScript is disabled or blocked, a `<noscript>` fallback ensures basic page view tracking still works.
 
 ## ⚙️ Setup
-1. Register and setup your free [GoatCounter](https://www.goatcounter.com).
-2. Create a free [GoatCounter vanity URL](https://www.goatcounter.com/help/faq#custom-domain)
+1. Register and setup your free [GoatCounter](https://www.goatcounter.com) account.
+2. Create a free [GoatCounter vanity URL](https://www.goatcounter.com/help/faq#custom-domain).
 3. Go to the Micro.blog plugin directory and install the plugin from there.
 4. Include the tracking partial `{{ partial "goatcounter.html" . }}` in the footer.html of your theme, or wherever appropriate.
 5. Go to the plugin settings and enter your tracking domain, e.g. `https://name.goatcounter.com` or `https://stats.example.com`. Ensure you enter the full URL including `https://` and without `/count`.
