@@ -51,7 +51,7 @@ This plugin adds privacy-friendly, lightweight analytics to your Micro.blog site
 - Basic pageview counting
 - No browser/OS/location data
 
-## 🔒 Privacy & Technical Notes
+## Privacy & Technical Notes
 
 - **No external requests**: The GoatCounter JavaScript is bundled with the plugin and served from your own Micro.blog domain
 - **No cookies**: GoatCounter doesn't use cookies for tracking
