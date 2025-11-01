@@ -1,14 +1,11 @@
 {
   "name": "Privacy-optimized GoatCounter integration",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Respectful web analytics for Micro.blog using GoatCounter. Self-hosted JavaScript (no external requests) or tracking pixel-only mode.",
   "includes": [
-    "custom_footer.html",
+    "goatcounter.html",
     "js/count.js"
   ],
-  "inject": {
-    "footer": "custom_footer.html"
-  },
   "fields": [
     {
       "field": "params.goatcounter_url",
