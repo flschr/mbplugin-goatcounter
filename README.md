@@ -21,11 +21,12 @@ This plugin adds privacy-friendly, lightweight analytics to your Micro.blog site
 1. Register and setup your free [GoatCounter](https://www.goatcounter.com) account.
 2. Create a free [GoatCounter vanity URL](https://www.goatcounter.com/help/faq#custom-domain).
 3. Go to the Micro.blog plugin directory and install the plugin from there.
-4. Include the tracking partial `{{ partial "goatcounter.html" . }}` in the footer.html of your theme, or wherever appropriate.
-5. Go to the plugin settings and enter your tracking domain, e.g. `https://name.goatcounter.com` or `https://stats.example.com`. Ensure you enter the full URL including `https://` and without `/count`.
-6. **Choose your tracking mode**:
+4. Go to the plugin settings and enter your tracking domain, e.g. `https://name.goatcounter.com` or `https://stats.example.com`. Ensure you enter the full URL including `https://` and without `/count`.
+5. **Choose your tracking mode**:
    - **Enable JavaScript tracking** for full analytics (browser, OS, location, screen size, referrer, etc.) - all served locally from your domain
    - **Disable JavaScript tracking** for pixel-only mode (tracks only page path and title)
+
+**That's it!** The tracking code is automatically injected into your site's footer - no manual theme editing required.
 
 ## 📊 What You Get
 

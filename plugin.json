@@ -6,6 +6,9 @@
     "goatcounter.html",
     "js/count.js"
   ],
+  "inject": {
+    "footer": "goatcounter.html"
+  },
   "fields": [
     {
       "field": "params.goatcounter_url",
