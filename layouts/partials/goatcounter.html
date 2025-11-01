@@ -2,11 +2,14 @@
 {{ if .Site.Params.use_javascript }}
 {{- /* JavaScript-basiertes Tracking mit lokalem GoatCounter JS */ -}}
 <script data-goatcounter="{{ .Site.Params.goatcounter_url }}/count" src="{{ "js/count.js" | relURL }}" async></script>
-{{ end }}
-{{- /* Fallback für Browser ohne JavaScript oder wenn JS deaktiviert ist */ -}}
+{{- /* Fallback für Browser ohne JavaScript */ -}}
 <noscript>
   <img src="{{ .Site.Params.goatcounter_url }}/count?p={{ .RelPermalink }}&t={{ .Title | urlquery }}" alt="" style="position:absolute;bottom:0;width:1px;height:1px">
 </noscript>
+{{ else }}
+{{- /* Pixel-basiertes Tracking (kein JavaScript) */ -}}
+<img src="{{ .Site.Params.goatcounter_url }}/count?p={{ .RelPermalink }}&t={{ .Title | urlquery }}" alt="" style="position:absolute;bottom:0;width:1px;height:1px">
+{{ end }}
 {{ else }}
 <!-- GoatCounter plugin installed, but no domain configured -->
 {{ end }}
