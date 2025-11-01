@@ -3,11 +3,11 @@
   "version": "2.0.0",
   "description": "Respectful web analytics for Micro.blog using GoatCounter. Self-hosted JavaScript (no external requests) or tracking pixel-only mode.",
   "includes": [
-    "goatcounter.html",
+    "custom_footer.html",
     "js/count.js"
   ],
   "inject": {
-    "footer": "goatcounter.html"
+    "footer": "custom_footer.html"
   },
   "fields": [
     {
