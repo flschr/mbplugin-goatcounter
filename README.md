@@ -27,7 +27,10 @@ This plugin adds privacy-friendly, lightweight analytics to your Micro.blog site
    - **Disable JavaScript tracking** for pixel-only mode (tracks only page path and title)
 6. **Add the tracking code to your theme**:
    - Go to Design → Edit Custom Themes
-   - Add `{{ partial "goatcounter.html" . }}` to your theme's footer (typically in `layouts/partials/footer.html` or similar, before `</body>`)
+   - Add `{{ partial "goatcounter.html" . }}` to one of these footer files (before `</body>`):
+     - **Custom Footer** (in the Micro.blog design editor)
+     - `layouts/partials/footer.html`
+     - `layouts/partials/custom_footer.html`
    - Save and publish your changes
 
 ## What You Get
