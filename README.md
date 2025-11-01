@@ -4,7 +4,7 @@
 
 This plugin adds privacy-friendly, lightweight analytics to your Micro.blog site using [GoatCounter](https://www.goatcounter.com). It includes the official GoatCounter JavaScript **locally** in the plugin, ensuring **zero external requests** to third-party servers. You can choose between full JavaScript tracking or a simple tracking pixel for maximum privacy. You need to have a free GoatCounter account to use this plugin.
 
-## ✅ Features
+## Features
 
 - **Self-hosted JavaScript**: Official GoatCounter JS is included in the plugin (no external CDN requests)
 - **Flexible tracking modes**: Choose between full JS tracking or tracking pixel-only
@@ -12,12 +12,12 @@ This plugin adds privacy-friendly, lightweight analytics to your Micro.blog site
 - **Full analytics data**: With JS enabled, you get browser, OS, location, screen size, and more
 - **Fully GDPR-friendly**: No cookies, no third-party tracking, no fingerprinting
 
-## 🛠 How It Works
+## How It Works
 1. **With JavaScript enabled**: The locally hosted GoatCounter JS collects comprehensive analytics (browser, OS, referrer, screen size, location) and sends it to your GoatCounter instance.
 2. **With JavaScript disabled** (or if you disable it in settings): A simple tracking pixel (`<img>`) tracks page views with path and title only.
 3. **Complete privacy**: All JavaScript is served from your own domain - no external requests to GoatCounter CDN or other third parties.
 
-## ⚙️ Setup
+## Setup
 1. Register and setup your free [GoatCounter](https://www.goatcounter.com) account.
 2. Create a free [GoatCounter vanity URL](https://www.goatcounter.com/help/faq#custom-domain).
 3. Go to the Micro.blog plugin directory and install the plugin from there.
@@ -28,7 +28,7 @@ This plugin adds privacy-friendly, lightweight analytics to your Micro.blog site
 
 **That's it!** The tracking code is automatically injected into your site's footer - no manual theme editing required.
 
-## 📊 What You Get
+## What You Get
 
 **With JavaScript enabled** (recommended):
 - Full analytics suite from the official GoatCounter JS
