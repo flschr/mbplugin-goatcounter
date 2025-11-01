@@ -25,8 +25,10 @@ This plugin adds privacy-friendly, lightweight analytics to your Micro.blog site
 5. **Choose your tracking mode**:
    - **Enable JavaScript tracking** for full analytics (browser, OS, location, screen size, referrer, etc.) - all served locally from your domain
    - **Disable JavaScript tracking** for pixel-only mode (tracks only page path and title)
-
-**That's it!** The tracking code is automatically injected into your site's footer - no manual theme editing required.
+6. **Add the tracking code to your theme**:
+   - Go to Design → Edit Custom Themes
+   - Add `{{ partial "goatcounter.html" . }}` to your theme's footer (typically in `layouts/partials/footer.html` or similar, before `</body>`)
+   - Save and publish your changes
 
 ## What You Get
 
