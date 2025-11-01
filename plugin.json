@@ -1,10 +1,14 @@
 {
   "name": "Privacy-optimized GoatCounter integration",
-  "version": "1.0.6",
-  "description": "Respectful web analytics for Micro.blog using GoatCounter. Tracking pixel-only or enhanced with optional referrer tracking via inline JavaScript.",
+  "version": "2.0.0",
+  "description": "Respectful web analytics for Micro.blog using GoatCounter. Self-hosted JavaScript (no external requests) or tracking pixel-only mode.",
   "includes": [
-    "goatcounter.html"
+    "goatcounter.html",
+    "js/count.js"
   ],
+  "inject": {
+    "footer": "goatcounter.html"
+  },
   "fields": [
     {
       "field": "params.goatcounter_url",
@@ -13,7 +17,7 @@
     },
     {
       "field": "params.use_javascript",
-      "label": "Enable inline JS (adds referrer tracking)",
+      "label": "Enable JavaScript tracking (locally hosted, no external requests)",
       "type": "boolean"
     }
   ]
